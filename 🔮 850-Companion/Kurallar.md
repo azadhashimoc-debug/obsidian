@@ -17,7 +17,7 @@ olarak bağlama girer, yani buraya yazılan şey bir daha unutulmaz.
   uzun girizgâh okumak yerine sonucu görmek istiyor, ısınma turu zaman kaybı.
 - **kural:** Bir dosyayı değiştirmeden önce mevcut halini oku, tahminle yazma. **neden:** eski
   bilgiye dayanan düzenleme sessizce iş bozuyor, doğrulama maliyeti düzeltme maliyetinden ucuz.
-- **kural:** (buraya kendi kuralın) **neden:** (bu kuralın hangi hatadan doğduğu)
+- **kural:** Yeni Layihə Yaratma Protokolu: İstifadəçi 'yeni layihə yarat' dedikdə, əvvəlcə layihənin adını və məqsədini soruş. Sonra 🏰 300-Projects/<Layihə-Adı>/ altında ayrıca qovluq yarat və əsas sənədləri (Project.md, Tasks.md, Decisions.md) hazırla. Layihənin kodunu həmin qovluqda saxlamağın uyğun olub-olmadığını layihənin tipinə görə (məs: böyük repository, standalone repo və ya sənədləşmə) müəyyən et. Mövcud layihələrə və yaddaş fayllarına icazəsiz toxunma. **neden:** Adem bütün layihələrin vahid arxitektura, tapşırıq və qərar qeydiyyatı standartı ilə nizamlı idarə olunmasını tələb edir.
 
 ## Nasıl büyür
 

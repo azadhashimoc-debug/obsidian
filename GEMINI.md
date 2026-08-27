@@ -21,3 +21,14 @@ Bu qayda Antigravity agentinin AdemOS (Ikinci Beyin) vaultunda islemesi ucun xus
 - Oxu, sonra yaz: Movcud melumati silme; faylin uzerine yazmazdan evvel hemise movcud mezmunu oxu ve strukturunu qoru.
 - Ses-kuyu yaddasa yazma: Ehemiyyetsiz, kicik sohbetleri ve ya tesadufi suallari yaddas fayllarina yazma - yalniz deyerli qerarlari, arxitektura deyisikliklerini ve layihe statuslarini saxla.
 - Toxunulmazliq: Movcud Claude Code konfiqurasiyalarina (.claude/), hook-lara (.claude/hooks/) ve bu qaydanin ozune icazesiz toxunma ve deyisme.
+
+## 5. Yeni Layihə Yaratma Protokolu
+- İstifadəçi 'yeni layihə yarat' dedikdə:
+  1. Əvvəlcə layihənin adını və məqsədini soruş.
+  2. 🏰 300-Projects/<Layihə-Adı>/ altında ayrıca qovluq yarat.
+  3. Layihə üçün 3 əsas sənədi hazırla:
+     - Project.md (İcmal, arxitektura, texnologiyalar, hədəflər)
+     - Tasks.md (Görüləcək işlər, prioritetlər və statuslar)
+     - Decisions.md (Texniki və biznes qərarlarının arxivi)
+  4. Layihənin kodunu həmin qovluqda saxlamağın uyğun olub-olmadığını layihənin tipinə görə müəyyən et (məs: mono-repo, xarici Git repo, yalnız sənədləşmə və s.).
+  5. Mövcud layihələrə və yaddaş fayllarına icazəsiz toxunma.
