@@ -82,6 +82,12 @@ Hər bir tapılmış elan bu formatda analiz olunur:
 
 ---
 
+## 🌐 Monitorinq Edilən Əsas Portallar
+- **Azərbaycan**: `JobSearch.az`, `HelloJob.az`, `Tap.az (IT & Telekom Vakansiyaları)`, `SmartJob.az`, `Busy.az`, `LinkedIn (Baku Tech)`
+- **Remote / Qlobal**: `Arc.dev`, `WeWorkRemotely`, `RemoteOK`, `ReactJobs.io`, `4DayWeek.io`
+
+---
+
 ## 🚫 Qadağalar & Zəmanət
 1. Profil və CV-də olmayan təcrübə heç vaxt varmış kimi göstərilmir.
 2. Ümumi sayt ana səhifəsi vakansiya linki kimi qəbul edilmir (dəqiq link yoxdursa "Dəqiq link məlum deyil" yazılır).

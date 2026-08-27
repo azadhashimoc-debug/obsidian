@@ -4,7 +4,7 @@ created: 2026-08-27
 updated: 2026-08-27
 type: config
 project: Job-Hunter
-tags: [sources, job-portals, scraping, search]
+tags: [sources, job-portals, scraping, search, tap-az]
 ---
 
 # 🌐 İş Axtarış Mənbələri (Sources)
@@ -16,8 +16,9 @@ AdemOS Job Hunter sisteminin monitorinq etdiyi rəsmi mənbələr və birbaşa a
 ## 1. 🇦🇿 Azərbaycan Yerli İş Portalları
 - **JobSearch.az** (`https://jobsearch.az`) — Əsas IT, Proqramlaşdırma, Sistem İnzibatçılığı və Mühəndislik vakansiyaları.
 - **HelloJob.az** (`https://hellojob.az`) — Proqram təminatı, IT Support, Help Desk, Şəbəkə və Web vakansiyaları.
-- **SmartJob.az** (`https://smartjob.az`) — Texniki xidmət, IT mütəxəssis və praktiki kompüter ustası elanları.
-- **LinkedIn (Azerbaijan Tech)** (`https://linkedin.com/jobs`) — Bakı üzrə yerli və qlobal texnologiya şirkətlərinin elanları.
+- **Tap.az (Vakansiyalar / IT & Telekom)** (`https://tap.az/elanlar/vakansiyalar/informasiya-texnologiyalari-telekom`) — Xüsusilə **IT Support**, **Help Desk**, **Kompüter Ustası**, **Şəbəkə və Kamera quraşdırma**, və yerli şirkətlərin texniki xidmət vakansiyaları.
+- **SmartJob.az** & **Busy.az** (`https://smartjob.az`, `https://busy.az`) — Texniki xidmət, IT mütəxəssis və praktiki elanlar.
+- **LinkedIn (Azerbaijan Tech)** (`https://linkedin.com/jobs`) — Bakı üzrə yerli və qlobal texnologiya şirkətlərinin rəsmi elanları.
 
 ---
 
