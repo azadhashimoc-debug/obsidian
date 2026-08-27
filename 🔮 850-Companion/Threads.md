@@ -25,3 +25,10 @@ Ongoing storylines that span multiple sessions.
 
 ## Closed Threads
 (none)
+
+### 5. 🌟 AI Influencer Studio (Virtual Fenomen & Avtomatik Reels)
+- **Status**: `🟢 Aktiv / İnkişafda`
+- **Prioritet**: `P1`
+- **İstiqamət**: AI Video Pipeline, ElevenLabs Səs, LivePortrait, OpenMontage, Reels Monetizasiyası.
+- **Son Qərar**: ADR-001 (Azərbaycan bazarı və Instagram/TikTok fokuslandı).
+- **Növbəti Addım**: Modelin ad və vizual konseptinin seçilməsi, ilk test videosunun çıxarılması.
