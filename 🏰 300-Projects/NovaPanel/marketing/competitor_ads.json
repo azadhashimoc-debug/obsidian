@@ -1,0 +1,12 @@
+[
+    {
+        "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&q=RAKIP1_SAYFA_ADI",
+        "error": "no_items",
+        "errorDescription": "Empty or private data for provided input"
+    },
+    {
+        "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&q=RAKIP2_SAYFA_ADI",
+        "error": "no_items",
+        "errorDescription": "Empty or private data for provided input"
+    }
+]

@@ -1,0 +1,58 @@
+{
+  "campaign": {
+    "name": "Panelim_Acquisition_Speed_Bonus20",
+    "objective": "CONVERSIONS",
+    "status": "ACTIVE",
+    "daily_budget": 2000, 
+    "buying_type": "AUCTION"
+  },
+  "ad_sets": [
+    {
+      "name": "Broad_Azerbaijan_18_35",
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "billing_event": "IMPRESSIONS",
+      "status": "ACTIVE",
+      "targeting": {
+        "geo_locations": {
+          "countries": ["AZ"]
+        },
+        "age_min": 18,
+        "age_max": 35,
+        "interests": [
+          {"id": "6002714897272", "name": "Social media marketing"},
+          {"id": "6002714898172", "name": "TikTok"},
+          {"id": "6002714898272", "name": "Instagram"},
+          {"id": "6003290610996", "name": "Entrepreneurship"}
+        ]
+      },
+      "promoted_object": {
+        "pixel_id": "YOUR_PIXEL_ID",
+        "custom_event_type": "ADD_PAYMENT_INFO" 
+      }
+    }
+  ],
+  "ads": [
+    {
+      "name": "Ad_Feed_Image_Bonus20",
+      "status": "ACTIVE",
+      "creative": {
+        "title": "Panel'im ilə Gözləməyə Son Qoy!",
+        "body": "SMM xidmətlərində saatlarla gözləməkdən bezmisən? Panelim.az ilə 1 saniyəyə şifrəsiz icra! Üstəlik ilk yükləmədə +20% BONUS 🎁 Şərhlərə BONUS yaz, linki göndərək!",
+        "image_url": "HOSTED_URL_FOR_panelim_ad_feed_bonus.jpg",
+        "call_to_action_type": "SIGN_UP",
+        "link_url": "https://panelim.az"
+      }
+    },
+    {
+      "name": "Ad_Reels_Video_UGC_Speed",
+      "status": "ACTIVE",
+      "creative": {
+        "title": "1 Saniyəyə SMM Xidməti ⚡",
+        "body": "Ucuz panel axtarıb pulunu çöpe atma. Sürəti seç, ilk ödənişdə 20% bonus qazan! 🚀",
+        "video_id": "UPLOADED_VIDEO_ID_FROM_SCRIPT_1",
+        "call_to_action_type": "LEARN_MORE",
+        "link_url": "https://panelim.az"
+      }
+    }
+  ]
+}

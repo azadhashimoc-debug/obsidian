@@ -12,6 +12,7 @@ Hoş geldin Adem. Bu senin ikinci beynin.
 - 🎯 [[🎯 100-Command-Center/Dashboard.md|Dashboard]]
 - ⚔️ [[⚔️ 200-Goals/|Hədəflər]]
 - 🏰 [[🏰 300-Projects/|Layihələr]]
+  - 🚀 [[🏰 300-Projects/NovaPanel/Overview.md|NovaPanel / Panelim.az]]
 - 🔐 [[🔐 400-Vault/|Özəl / Maliyyə]]
 - 🧠 [[🧠 500-Knowledge/|Bilik Bazası]]
 - 🛠️ [[🛠️ 600-Arsenal/|Alətlər və Resurslar]]

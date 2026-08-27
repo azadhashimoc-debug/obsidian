@@ -1,0 +1,110 @@
+{
+  "campaign": {
+    "name": "[PANELIM] - Ad-Spy Winning SMM Kampaniyası - 2026",
+    "objective": "OUTCOME_SALES",
+    "status": "ACTIVE",
+    "buying_type": "AUCTION",
+    "budget_type": "ABO",
+    "daily_budget_total_azn": 30.0,
+    "theme": "0.2 San İcra + Mənbə Qiymətləri + Təhlükəsiz Drip-Feed"
+  },
+  "tracking": {
+    "pixel_id": "YOUR_META_PIXEL_ID",
+    "pixel_events": {
+      "page_view": "PageView",
+      "registration": "CompleteRegistration",
+      "initiate_checkout": "InitiateCheckout",
+      "add_payment_info": "AddPaymentInfo",
+      "purchase_deposit": "Purchase"
+    },
+    "custom_data_parameters": {
+      "currency": "AZN",
+      "value_param": "deposit_amount",
+      "content_name": "SMM_Balance_TopUp"
+    },
+    "base_url": "https://panelim.az/",
+    "utm_template": "utm_source=meta&utm_medium=cpc&utm_campaign=winning_ads_2026&utm_content={{adset.name}}&utm_term={{ad.name}}"
+  },
+  "ad_sets": [
+    {
+      "id": "adset_01_broad_open",
+      "name": "AdSet 01 - Broad Open (Meta AI Advantage+)",
+      "daily_budget_azn": 10.0,
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "conversion_event": "CompleteRegistration",
+      "targeting": {
+        "locations": ["Azerbaijan"],
+        "age_min": 18,
+        "age_max": 50,
+        "genders": ["ALL"],
+        "interests": []
+      },
+      "placements": "ADVANTAGE_PLUS",
+      "creative_mapping": {
+        "feed_file": "ad-post-feed-winning.html",
+        "story_file": "ad-post-story-winning.html",
+        "primary_text": "Səhifənizə minlərlə manat reklam xərcləyirsiniz, amma profiliniz boş göründüyü üçün müştərilər güvənmir? 📉\n\nVasitəçilərə 5-10 qat artıq pul ödəməyə son qoyun! Panelim.az ilə birbaşa ən ucuz mənbədən:\n⚡ 0.2 saniyədə anında başlayan avtomatik icra\n🛡️ Drip-Feed (hesabınızı qoruyan təbii kademeli artım)\n💳 İstənilən yerli kartla anında və təhlükəsiz balans artımı\n\nİndi qeydiyyatdan keçin, profilinizin etibarını və satışlarınızı dərhal qaldırın! 👇",
+        "headline": "Səhifənin Güvənini 1 Dəqiqədə Qaldır 🚀",
+        "description": "0.2 San Avtomatik İcra • Şifrə Tələb Olunmur",
+        "cta": "LEARN_MORE"
+      }
+    },
+    {
+      "id": "adset_02_ecom_business",
+      "name": "AdSet 02 - E-Commerce & Instagram Mağaza Sahibləri",
+      "daily_budget_azn": 10.0,
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "conversion_event": "Purchase",
+      "targeting": {
+        "locations": ["Azerbaijan"],
+        "cities": ["Baku", "Sumqayit", "Ganja"],
+        "age_min": 21,
+        "age_max": 48,
+        "genders": ["ALL"],
+        "interests": [
+          "Social media marketing (SMM)",
+          "E-commerce",
+          "Online shopping",
+          "Digital marketing",
+          "Retail",
+          "Boutique"
+        ],
+        "flexible_spec_must_match": [
+          "Facebook Page Admins",
+          "Small business owners"
+        ]
+      },
+      "placements": ["Instagram_Feed", "Instagram_Stories", "Instagram_Reels"],
+      "creative_mapping": {
+        "feed_file": "ad-post-feed-winning.html",
+        "story_file": "ad-post-story-winning.html",
+        "primary_text": "SMM xidmətlərini vasitəçilərdən baha qiymətə almaqdan yoruldunuz? 🔥\n\nPanelim.az Azərbaycanın ən sürətli və ən sərfəli avtomatlaşdırılmış SMM platformasıdır!\n🔹 Instagram, TikTok, YouTube, Telegram və 20+ platforma\n🔹 7/24 fasiləsiz avtomatik icra (0.2 san)\n🔹 Şifrə tələb olunmur, 100% təhlükəsiz sistem\n\nÖz səhifənizi böyütmək və ya müştərilərinizə xidmət göstərmək üçün indi başlayın! 💸",
+        "headline": "Topdansatış Qiymətinə SMM Sistemi ⚡",
+        "description": "25,000+ Uğurlu Sifariş • 7/24 Dəstək",
+        "cta": "GET_OFFER"
+      }
+    },
+    {
+      "id": "adset_03_retargeting_engaged",
+      "name": "AdSet 03 - Retargeting (Sayta Girənlər & Balans Artırmayanlar)",
+      "daily_budget_azn": 10.0,
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "conversion_event": "Purchase",
+      "targeting": {
+        "custom_audiences": [
+          "Website Visitors - Last 30 Days",
+          "CompleteRegistration (No Deposit)"
+        ]
+      },
+      "placements": "ADVANTAGE_PLUS",
+      "creative_mapping": {
+        "feed_file": "ad-post-feed-winning.html",
+        "story_file": "ad-post-story-winning.html",
+        "primary_text": "Balansınızı artırmağı unutmusunuz? 🎁\n\nPanelim.az ilə sifarişləriniz 0.2 saniyədə avtomatik icra olunur. Bütün yerli kartlarla komissiyasız balans artırın və sosial mediada sürətlə böyüyün!",
+        "headline": "Balansını Artır & Dərhal Başla ✦",
+        "description": "7/24 Fasiləsiz Xidmət",
+        "cta": "SIGN_UP"
+      }
+    }
+  ]
+}
