@@ -124,6 +124,45 @@ Ona görə lövhəni tək HTML fayla yığmaq mümkündür:
 Nəticə: tıklanabilir, replay-i işləyən, internet tələb etməyən tək fayl.
 Sənədləşdirmə və paylaşım üçün faydalıdır.
 
+### VPS-də canlı yayımlamaq
+
+`scripts/backlot-vps-deploy.sh` — Ubuntu/Debian VPS-də root olaraq işlədilir:
+
+```bash
+DOMAIN=backlot.panelim.az bash backlot-vps-deploy.sh   # domen + TLS
+bash backlot-vps-deploy.sh                             # sadəcə IP, TLS-siz
+```
+
+Qurur: `/opt/openmontage` + venv → `backlot.service` (systemd, 127.0.0.1-də) →
+nginx reverse proxy (basic auth) → certbot ilə HTTPS. Parolu bir dəfə çap edir.
+
+> [!danger] Backlot-un autentifikasiyası YOXDUR
+> Lövhə bütün istehsalat fayllarını, ssenariləri və xərcləri göstərir.
+> Portu birbaşa internetə açmaq hamısını açıq qoymaq deməkdir.
+> Skript ona görə nginx səviyyəsində parol qoyur — bunu çıxarma.
+
+**Kritik detal — SSE nginx arxasında.** Lövhənin canlı qalması bu dörd sətirdən asılıdır:
+
+```nginx
+proxy_http_version 1.1;
+proxy_set_header Connection "";
+proxy_buffering off;          # açıq qalsa nginx axını tutur, lövhə donur
+chunked_transfer_encoding off;
+proxy_read_timeout 1h;        # qısa olsa axın hər dəfə qırılır
+```
+
+**Doğrulandı (2026-08-29)** — nginx + basic auth arxasında, real brauzerdə:
+parolsuz 401, parolla 200; `events.jsonl`-a sətir yazıldıqda SSE `change` hadisəsi
+saniyələr içində gəldi və lövhə **səhifə yenilənmədən** özünü yenilədi.
+
+### Windows-da lokal
+
+`scripts/Backlot-Qur.ps1` — sağ klik → "Run with PowerShell". Ön şərtləri yoxlayır,
+repo klonlayır, venv + npm qurur, ffmpeg-i winget ilə çəkir, simulyator bug-ını
+düzəldir, nümunə istehsalat yaradır və brauzeri açır.
+Sintaksisi yoxlanılıb; simulyator düzəlişi real fayl üzərində sınaqdan keçirilib.
+Windows-a xas addımlar (winget, `py -3.x`) sınanmayıb — orada ilk işlədən sənsən.
+
 > [!note] Xaricdən giriş
 > Uzaq konteynerdə lövhəni ictimai şəbəkəyə açmaq mümkün olmadı: inbound marşrut yoxdur
 > və bütün tunel xidmətləri (trycloudflare, ngrok, localtunnel) egress siyasəti ilə bağlıdır.
