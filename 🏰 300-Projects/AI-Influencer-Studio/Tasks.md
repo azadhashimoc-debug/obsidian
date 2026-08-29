@@ -1,7 +1,7 @@
 ---
 title: AI Influencer Studio — Tapşırıqlar & Görüləcək İşlər
 created: 2026-08-27
-updated: 2026-08-27
+updated: 2026-08-29
 type: tasks
 project: AI-Influencer-Studio
 ---
@@ -25,7 +25,9 @@ project: AI-Influencer-Studio
 ---
 
 ## 🎬 Faza 3: Avtomatlaşdırılmış Montaj (OpenMontage) (Prioritet: P1)
-- [ ] **OpenMontage / Script Quraşdırılması**: Video üzərinə CapCut tərzi dinamik altyazı və səs effektləri qoyan avtomatlaşdırma skriptini hazırlamaq.
+- [x] **OpenMontage Quraşdırılması** (2026-08-29): Repo klonlandı, `make setup` uğurla keçdi, ffmpeg əlavə edildi. 37 açarsız alət hazır, demo render uçdan-uca doğrulandı (1080p30 h264). Detallar: [[🛠️ 600-Arsenal/OpenMontage.md|OpenMontage]].
+- [ ] **CapCut Tərzi Altyazı Axını**: `remotion_caption_burn` + `subtitle_gen` alətlərini Azərbaycan dilli sözbəsöz yanan altyazı üçün konfiqurasiya etmək.
+- [ ] **API Açarlarının Doldurulması**: `.env` içinə `ELEVENLABS_API_KEY` və şəkil generasiyası üçün bir provider açarı (`tts` 1/10, `image_generation` 0/16 vəziyyətindədir).
 - [ ] **Şablon Hazırlığı**: 9:16 vertikal format, cəlbedici şriftlər və arxa fon musiqi inteqrasiyası.
 
 ---

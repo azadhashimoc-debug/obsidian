@@ -31,4 +31,5 @@ Ongoing storylines that span multiple sessions.
 - **Prioritet**: `P1`
 - **İstiqamət**: AI Video Pipeline, ElevenLabs Səs, LivePortrait, OpenMontage, Reels Monetizasiyası.
 - **Son Qərar**: ADR-001 (Azərbaycan bazarı və Instagram/TikTok fokuslandı).
-- **Növbəti Addım**: Modelin ad və vizual konseptinin seçilməsi, ilk test videosunun çıxarılması.
+- **Son İş (2026-08-29)**: OpenMontage quraşdırıldı və render zənciri doğrulandı (Faza 3 montaj bazası hazır).
+- **Növbəti Addım**: Modelin ad və vizual konseptinin seçilməsi; `.env` açarlarının (ElevenLabs + şəkil provideri) doldurulması; ilk test videosunun çıxarılması.
