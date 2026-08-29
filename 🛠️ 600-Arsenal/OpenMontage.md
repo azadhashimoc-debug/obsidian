@@ -87,6 +87,36 @@ cd remotion-composer && npx remotion render src/index.tsx Explainer out.mp4 \
 
 ---
 
+## 🎦 Backlot — canlı storyboard lövhəsi
+
+FastAPI + uvicorn serveri, `projects/` qovluğunu izləyir və hər istehsalatın
+mərhələlərini, ssenarisini, səhnə kartlarını, alət hadisələrini və xərcini canlı göstərir.
+Lövhə heç nə hesabat vermir — hamısını diskdəki fayllardan törədir.
+
+```bash
+python -m backlot open              # kitabxana (serveri qaldırır + brauzeri açır)
+python -m backlot open <project-id> # bir istehsalatın canlı lövhəsi
+python -m backlot serve --port 4750 # yalnız server, ön planda
+```
+
+Default port **4750** (`BACKLOT_PORT` ilə dəyişir). `cmd_serve` host-u
+**`127.0.0.1`-ə sabitləyir** — şəbəkədə görünməsi üçün uvicorn-u birbaşa çağır:
+`python -m uvicorn backlot.server:app --host 0.0.0.0 --port 4750`.
+
+### Tələ 5: demo simulyatoru sınıqdır
+`scripts/backlot_simulate_run.py` `research`-dən birbaşa `script`-ə keçir, amma
+`lib/checkpoint.py` artıq `proposal`-ı məcburi ön şərt sayır →
+`CheckpointValidationError: PREREQUISITE VIOLATION`. Araya `proposal` mərhələsi
+(`sample_artifact("proposal_packet")`) əlavə etdikdə tam işləyir.
+Həmçinin skript `pytest` istəyir: əvvəlcə `pip install -r requirements-dev.txt`.
+
+> [!note] Xaricdən giriş
+> Uzaq konteynerdə lövhəni ictimai şəbəkəyə açmaq mümkün olmadı: inbound marşrut yoxdur
+> və bütün tunel xidmətləri (trycloudflare, ngrok, localtunnel) egress siyasəti ilə bağlıdır.
+> Öz maşınında bu problem yoxdur.
+
+---
+
 ## 🔗 Əlaqəli
 
 - [[🏰 300-Projects/AI-Influencer-Studio/Project.md|AI Influencer Studio]] — Faza 3 montaj mərhələsi
