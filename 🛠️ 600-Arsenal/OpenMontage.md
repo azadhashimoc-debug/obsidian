@@ -110,6 +110,20 @@ Default port **4750** (`BACKLOT_PORT` ilə dəyişir). `cmd_serve` host-u
 (`sample_artifact("proposal_packet")`) əlavə etdikdə tam işləyir.
 Həmçinin skript `pytest` istəyir: əvvəlcə `pip install -r requirements-dev.txt`.
 
+### Lövhəni serversiz paylaşmaq
+Backlot UI-nin bütün server təması cəmi bir neçə nöqtədədir: `/api/project/<id>/state`
+(yeganə data çağırışı), `/api/.../events` (SSE) və `/media` · `/thumb` (şəkillər).
+board.js onsuz da **`?static=1`** parametrini tanıyır və canlı axını söndürür.
+Ona görə lövhəni tək HTML fayla yığmaq mümkündür:
+
+1. `load_board_state()` ilə state JSON-u çıxar (server qaldırmağa ehtiyac yoxdur),
+2. `board.css` + `lib.js` + `board.js`-i inline et (`export`/`import` sətirlərini təmizlə),
+3. `mediaURL`/`thumbURL`-i data-URI xəritəsinə yönləndir, `fetch`-i state ilə cavab verən shim-lə əvəz et,
+4. `projectId`-ni sabitlə (normalda `location.pathname`-dan gəlir).
+
+Nəticə: tıklanabilir, replay-i işləyən, internet tələb etməyən tək fayl.
+Sənədləşdirmə və paylaşım üçün faydalıdır.
+
 > [!note] Xaricdən giriş
 > Uzaq konteynerdə lövhəni ictimai şəbəkəyə açmaq mümkün olmadı: inbound marşrut yoxdur
 > və bütün tunel xidmətləri (trycloudflare, ngrok, localtunnel) egress siyasəti ilə bağlıdır.
