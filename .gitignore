@@ -19,3 +19,8 @@
 .obsidian/cache
 __pycache__/
 *.pyc
+
+# Şəxsi / məxfi qeydlər. Repo public olduğu üçün 400-Vault içindəki heç nə
+# GitHub-a getmir: fiziki profil, maliyyə, foto referanslar burada qalır.
+🔐 400-Vault/*
+!🔐 400-Vault/.gitkeep

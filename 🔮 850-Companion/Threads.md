@@ -4,8 +4,8 @@ Ongoing storylines that span multiple sessions.
 
 ## Active Threads
 ### Thread: AdemOS İkinci Beyin Sistemi
-**Status:** 🟢 Active: v2.0.0 arxitekturası, kancalar və Antigravity protokolu aktivdir.
-**Next:** Gündəlik istifadə və yaddaş qatının avtomatlaşdırılması.
+**Status:** 🟢 Active: v2.0.0 aktiv. 2026-08-30-da hook-ların execute biti düzəldildi, avtomatik yaddaş zənciri (hook → flush.py → daily/ → compile.py → knowledge/) ilk dəfə işlək vəziyyətdədir.
+**Next:** İlk avtomatik `daily/` logunun və `knowledge/` derlemesinin real sessiyada yoxlanması. Repo public olduğu üçün private-a keçirilməsi qərarı.
 
 ### Thread: NovaPanel (Panelim.az) Layihəsi
 **Status:** 🟢 Active (P0): [[🏰 300-Projects/NovaPanel/Project.md|Project]] · [[🏰 300-Projects/NovaPanel/Tasks.md|Tasks]] · [[🏰 300-Projects/NovaPanel/Decisions.md|Decisions]]
